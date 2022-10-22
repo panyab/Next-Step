@@ -17,7 +17,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}> InterBlack</Text>
+      <Text style={styles.text}> Test Title</Text>
+      <Text style={styles.body}> Test Body</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -35,5 +36,11 @@ const styles = StyleSheet.create({
     fontSize:24,
     color:'#fffff',
     fontFamily: 'Jost_700Bold',
+  },
+  body:{
+    fontSize:24,
+    color:'#fffff',
+    fontFamily: 'Jost_400Regular',
   }
+
 });
