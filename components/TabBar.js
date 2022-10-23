@@ -1,3 +1,4 @@
+/*
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import "../screens/Home";
 import "../screens/Resources";
@@ -17,3 +18,4 @@ export default function TabBar() {
     </Tab.Navigator>
   );
 }
+*/

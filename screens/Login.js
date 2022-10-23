@@ -105,11 +105,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#3D3D3D",
     alignContent: 'center',
   },
-  headerCont: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems:"center",
-  },
   header: {
     textAlign: 'center',
     fontFamily: 'Jost_700Bold',
