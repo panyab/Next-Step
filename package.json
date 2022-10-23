@@ -9,9 +9,15 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@expo-google-fonts/inter": "^0.2.2",
     "@expo-google-fonts/jost": "^0.2.2",
     "@expo/webpack-config": "^0.17.0",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.10",
+    "@react-navigation/bottom-tabs": "^6.4.0",
+    "@react-navigation/native-stack": "^6.9.1",
     "expo": "~46.0.16",
     "expo-app-loading": "~2.1.0",
     "expo-font": "~10.2.0",
@@ -19,6 +25,7 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.6",
+    "react-native-vector-icons": "^9.2.0",
     "react-native-web": "~0.18.7",
     "react-scripts": "^5.0.1"
   },

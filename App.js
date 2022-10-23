@@ -2,9 +2,17 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts, Jost_300Light, Jost_400Regular, Jost_700Bold } from '@expo-google-fonts/jost';
+import "./screens/Login";
+import SplashScreen from './screens/splash';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import LoginScreen from './screens/Login';
+import HomeScreen from './screens/Home';
 
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
+
   let [fontsLoaded] = useFonts({
     Jost_300Light,
     Jost_400Regular,
@@ -16,11 +24,20 @@ export default function App() {
   }
 
   return (
+    /*
     <View style={styles.container}>
       <Text style={styles.text}> Test Title</Text>
       <Text style={styles.body}> Test Body</Text>
       <StatusBar style="auto" />
     </View>
+    */
+
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen options={{headerShown: false}} name="Login" component={LoginScreen} />
+        <Stack.Screen options={{headerShown: false}} name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
